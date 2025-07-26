@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0b0b11;
+    font-family: Ubuntu, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #999;
+  border-radius: 100px;
+}
+.topHeadlines .right .topNews::-webkit-scrollbar{
+    width: 6px;
+}
+.topHeadlines .right .topNews::-webkit-scrollbar-thumb{
+    background-color: #777;
+}
+
+.header {
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #0b0b11;
+}
+.logo {
+    font-size: 45px;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+    border-left: 1px solid #fff0;
+    border-left: 1px solid #fff0;
+    transition: 0.3s;
+}
+nav ul li:hover {
+    border-left: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.topHeadlines {
+    padding: 100px 50px 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.topHeadlines .left{
+    padding: 10px 30px;
+    /* background-color: #999;  */
+}
+.topHeadlines .left > .title {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.topHeadlines .left .img{
+    width: 100%;
+    height: 400px;
+    background-color: #a04;
+}
+.topHeadlines .left .text {
+    padding: 20px 15px 10px;
+}
+.topHeadlines .left .text .title h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline;
+    cursor: pointer;
+} 
+.topHeadlines .left .text .title h2:hover {
+    text-decoration: underline;
+}
+.topHeadlines .left .text .description{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+.topHeadlines .right{
+    padding: 10px;
+    width: 1005;
+    height: 500px;
+    /* background-color: #999;  */
+}
+.topHeadlines .right > .title {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.topHeadlines .right .topNews{
+    padding: 7px;
+    height: 85%;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    overflow-y: scroll;
+}
+.topHeadlines .right .topNews .news{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.topHeadlines .right .topNews .news .img{
+    width: 170px;
+    height: 120px;
+    background-color: #a04;
+}
+.topHeadlines .right .topNews .news .text{
+    margin-inline: 10px;
+}
+.topHeadlines .right .topNews .news .text .title{ 
+    cursor: pointer;
+}
+.topHeadlines .right .topNews .news .text .title:hover{
+    text-decoration: underline;
+}
+.page2{
+    width: 100%;
+    background-color: #16161d;
+    min-height: 100vh;
+    padding: 50px;
+}
+.page2 .news{
+    padding: 30px 0;
+}
+.page2 .news > .tilte h2{
+    font-size: 40px;
+    cursor: pointer;
+    display: inline;
+}
+.page2 .news > .tilte h2:hover{
+    text-decoration: underline;
+}
+.page2 .news .newsbox{
+    width: 100%;
+    background-color: #999;
+    margin-top: 20px;
+     display: flex;
+}
+.page2 .news .newsbox .newsCard{
+    width:calc(100% / 5-20px);
+    margin: 10px;
+    background-color: #070;
+   
+}
+.page2 .news .newsbox .newsCard .img{
+    width: 100%;
+    height: 150px;
+    background-color: #a04;
+}
+.page2 .news .newsbox .newsCard .text{
+    padding: 10px;
+}
+.page2 .news .newsbox .newsCard .text .tilte p{
+    font-size: 15px;
+    display: inline;
+    cursor: pointer;
+}
+.page2 .news .newsbox .newsCard .tilte p:hover{
+    text-decoration: underline;
+}
+
